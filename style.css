@@ -1,0 +1,229 @@
+body {
+    background-color: #CEEDC7;
+    font-family: 'Markazi Text', Serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+/* header-banner */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+/* articles */
+h2 {
+    font-size:2rem;
+    text-align: center;
+}
+/* logo centered */
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+/* menu */
+nav ul {
+    list-style:none;
+    text-align: center;
+    background-color: #285430;
+    border-radius: 15px;
+    padding: 20px;
+    margin:2% 0 2% 0;
+   
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+/* Navbar links on mouse-over */
+  
+a {
+    color: white; 
+    text-decoration: none;
+    font-size: 2.5rem;  
+}
+
+a:hover {
+    background-color: yellowgreen;
+    border-radius: 5px;
+    padding:15px;
+  }
+
+
+/* main-content */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  background-color:  yellowgreen;
+  border-radius: 15px;;
+  margin-bottom: 25px;
+}
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+  .slider {
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5rem;
+  }
+
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    animation: myfirst 30s ease-in 0s 1 normal forwards running;
+    
+  }
+ 
+
+  @keyframes myfirst {
+   
+    0% {
+      visibility: visible;
+      transform: translateX(0%)
+    }
+
+    25% {
+      visibility: visible;
+      transform: translateX(-100%)
+    }
+
+    50% {
+      visibility: visible;
+      transform: translateX(-200%)
+    }
+    75% {
+      visibility: visible;
+      transform: translateX(-300%)
+    }
+    100% {
+      visibility: visible;
+      transform: translateX(-400%)
+    }
+  }
+
+  .promo, p{
+    font-size:30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.cent-article {
+  background-color: yellowgreen;
+  border-radius: 15px;
+  padding-top: 2%;
+  margin: 0 5%;
+}
+.cent-article > button {
+  font-size: 2.5rem;
+  background-color:#285430;
+  padding: 30px 100px 30px 100px;
+  position: relative;
+  margin: 4% 30% 4% 35.56%;
+  color: white;
+  border-radius: 15px;
+  flex: 0;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: yellowgreen;
+}
+ 
+	
+/* Book Now Button */
+
+.button {
+ 
+  font-size: 2.5rem;
+    background-color:#285430;
+    padding: 30px 100px 30px 100px;
+    position: relative;
+    margin: 4% 35% 4% 35.56%;
+    color: white;
+    border-radius: 15px;
+    flex: 0;
+    white-space: nowrap;
+  }
+
+  .button:hover {
+    background-color: yellowgreen;
+  }
+
+/* Three columns with image and text */
+
+.side-article {
+    margin:5px;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    margin-bottom: 2%;
+}
+      
+
+
+
+.side-article > img {
+    display: block;
+    margin: 10% auto auto auto;
+    border-radius: 15px;
+   
+    
+}
+
+
+.side-article > button {
+
+    font-size: 1.5rem;
+    background-color:#285430;
+    padding: 20px;
+    position: relative;
+    margin: 10% auto 20% 30%;
+    border-radius: 15px;  
+
+}
+
+.button:hover {
+  background-color: yellowgreen;
+}
+
+
+/* footer */
+footer {
+   display : flex;
+}
+footer > div {
+    flex: 1;
+    background-color: #285430;
+}
+.footer-img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.footer-copyright{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+footer img {
+    padding-top: 5%;
+    padding-left:45%;
+    padding-bottom: 3%;
+}
+footer p {
+    padding-top:7%;
+    font-size: 1.5rem;
+    color: white;
+}
